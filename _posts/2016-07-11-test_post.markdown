@@ -1,4 +1,4 @@
-﻿---
+---
 layout: post
 title:  "Test post!"
 date:   2017-07-11 22:24:48 +0200
