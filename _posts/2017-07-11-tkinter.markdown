@@ -1,0 +1,46 @@
+---
+layout: post
+title:  "Call dialog to open nc file with tkinter"
+date:   2017-07-11 21:24:48 +0200
+categories: jekyll update
+---
+
+
+```python
+
+import os
+from netCDF4 import Dataset
+
+#Works for python 3
+import tkinter as tk # python3
+from tkinter.filedialog import askopenfilename # python 3
+
+#Works for python 2
+#import Tkinter as tk # python2
+#from tkFileDialog import askopenfilename # python2 
+
+
+#To show only the dialog without any other GUI elements
+root = tk.Tk()
+root.withdraw()
+#We get the whole path to file
+ask_filename = askopenfilename(initialdir= os.getcwd(),
+filetypes =(("NetCDF file", "*.nc"),
+("All Files","*.*")),title = "Choose a file.")
+#If you want to know name.nc
+#Split it and take the second element (only)
+fname = os.path.split(ask_filename)[1]
+
+#read file
+fh = Dataset(ask_filename)
+#read the variable in the file
+variable = fh.variables['variable_name'][:]
+
+```
+
+Libraries:  [NetCDF4][f1], [os][f2], [Tkinter]
+
+
+[f1]: http://unidata.github.io/netcdf4-python/
+[f2]: https://docs.python.org/2/library/os.html
+[f3]: https://docs.python.org/2/library/tkinter.html#
