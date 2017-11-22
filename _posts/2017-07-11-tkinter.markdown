@@ -27,6 +27,9 @@ root.withdraw()
 ask_filename = askopenfilename(initialdir= os.getcwd(),
 filetypes =(("NetCDF file", "*.nc"),
 ("All Files","*.*")),title = "Choose a file.")
+# If you do not specify initialdir= os.getcwd()
+# The initial dir would be the same as you opened the previous time
+
 #If you want to know name.nc
 #Split it and take the second element (only)
 fname = os.path.split(ask_filename)[1]
