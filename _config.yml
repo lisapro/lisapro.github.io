@@ -1,24 +1,16 @@
-title: "Home"
-#description: > # this means to ignore newlines until "baseurl:"
-
-github_username:  lisapro
-# Build settings
-
-markdown: kramdown
-encoding: utf-8
-theme: minima 
-
-plugins:
-  - jekyll-feed
-
-# Exclude from processing.
-# The following items will not be processed, by default. Create a custom list
-# to override the default setting.
-# exclude:
-#   - Gemfile
-#   - Gemfile.lock
-#   - node_modules
-#   - vendor/bundle/
-#   - vendor/cache/
-#   - vendor/gems/
-#   - vendor/ruby/
+# User config
+author: 'Home page'
+description:  "Python, Fortran, Biogeochemistry, Oceanography, Data vizualisaton,Data analysis"
+tagline: 'test'
+keywords: "Pineapple, Pineapple Pizza, Pineapple House"
+email: "myemail@example.com"
+#linkedin: "https://www.linkedin.com/"
+#twitter: "https://twitter.com/"
+Github: "https://github.com/lisapro"
+Researchgate: "https://www.researchgate.net/profile/Elizaveta_Protsenko2"
+# Site config
+baseurl: ""
+highlighter: rouge
+sass:
+  sass_dir: assets/scss
+  style: compressed
