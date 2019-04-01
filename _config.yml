@@ -3,7 +3,7 @@ author: 'Home page'
 description:  "Python, Fortran, Biogeochemistry, Oceanography, Data vizualisaton,Data analysis"
 tagline: 'test'
 keywords: "Pineapple, Pineapple Pizza, Pineapple House"
-email: "myemail@example.com"
+#email: "myemail@example.com"
 #linkedin: "https://www.linkedin.com/"
 #twitter: "https://twitter.com/"
 Github: "https://github.com/lisapro"
